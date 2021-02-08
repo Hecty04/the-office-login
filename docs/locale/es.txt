@@ -1,0 +1,146 @@
+#: locale=es
+
+## Tour
+
+### Description
+
+### Título
+tour.name = The Office
+
+## Skin
+
+### Botón
+Button_71E44AEE_7FB6_886A_41D2_4C034EAA4596.label = Back
+Button_71E93AE3_7FB6_889A_41D4_CB552A24AF6F.label = Desks
+Button_71EADAE5_7FB6_889E_41C9_0E5AA87E2411.label = Presentation Room
+Button_71EADAE5_7FB6_889E_41C9_0E5AA87E2411.pressedLabel = Location
+Button_71EB2AE6_7FB6_889A_41C5_966A88F5509B.label = Kitchen
+Button_71EBBAEA_7FB6_886A_41D6_FBE6DCD7D715.label = Conference Room
+Button_71EF7ADE_7FB6_88AA_41C9_25ECCBD3055F.label = Reception
+Button_7233AD81_6F1C_39C6_41BD_8D0B7E46A700.label = Floorplan
+Button_760762EB_6F3C_2B5A_41C0_9CAB4513AF37.label = BUTTON 3
+Button_7611F11E_6F3C_26FA_41D7_B6D0A54D03E6.label = BUTTON 2
+Button_7614B85A_6F3C_277A_41C8_EEFD8AF5E25A.label = SubMenu
+Button_7688D719_6F24_6AC6_41D2_1FB6CB0306A3.label = Back
+Button_768A8711_6F24_6AC6_41C6_BF12D498FAB1.label = BUTTON 1-1
+Button_768BE713_6F24_6ACA_41B0_812224BF1FC2.label = BUTTON 1-2
+Button_78F0B2CC_6F64_2B5E_41DA_38595F6F4B67.label = Menu
+Button_7CC01061_73D3_0978_41D1_51876BEE21B0.label = Contact Information
+Button_7CC03060_73D3_0978_41B7_FD41052B9911.label = Photoalbum
+Button_7CC05060_73D3_0978_41C6_9C590D08E7BA.label = Floorplan
+Button_7CC07060_73D3_0978_41C0_F6FD413A001E.label = Location
+Button_7CC07060_73D3_0978_41C0_F6FD413A001E.pressedLabel = Location
+Button_7CC19060_73D3_0978_41DA_9BAA0D04A0DD.label = Panorama List
+Button_7CC1B060_73D3_0978_41DA_E5796D002669.label = Tour Information
+
+### Texto Multilinea
+HTMLText_6512DF51_735D_1759_41AD_CF58B9D01ECB.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:25px;"><B>TIEMPO:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:right;font-size:40px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:40px;">{{quiz.time.remaining}}</SPAN></SPAN></DIV></div>
+HTMLText_6572D0D2_7355_095B_41B2_C649BFCDE17F.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:right;font-size:25px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:25px;"><B>PUNTOS:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:right;font-size:40px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:40px;">{{quiz.score}}/{{quiz.score.total}}</SPAN></SPAN></DIV></div>
+HTMLText_7CC74061_73D3_0978_41D7_E60930B7CCD7.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:'Oswald Regular';"><I>Company Name</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:'Oswald Regular';"><I>www.loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:'Oswald Regular';"><I>info@loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:'Oswald Regular';"><I>Tlf.: +11 111 111 111</I></SPAN></SPAN></DIV></div>
+
+### Etiqueta
+Label_7EDAC3CB_6EB9_9DF1_41D0_35142A5F148E.text = {{title}}
+
+## Media
+
+### Título
+album_659B6121_7337_08F9_41C7_29447AA07975.label = Album de Fotos hqdefault_live
+album_659B6121_7337_08F9_41C7_29447AA07975_0.label = hqdefault_live
+album_65BB562A_7469_A650_4192_463756C94D2A.label = Album de Fotos Screen-Shot-2020-07-06-at-10.39.06-AM
+album_65BB562A_7469_A650_4192_463756C94D2A_0.label = Screen-Shot-2020-07-06-at-10.39.06-AM
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035.label = The Office
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_0.label = 450_1000
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_1.label = 1582307185_993_El-cuestionario-mas-dificil-en-el-escritorio
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_10.label = xxx-office-wilson-closeup-1812
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_2.label = Bh01
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_3.label = cfc79329-9a8e-4595-b1f9-b31f725fbc28-kelly-kapoor-office
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_4.label = Character_-_JimHalpert.PNG
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_5.label = images
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_6.label = intro-1586377261
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_7.label = PAMHEAD
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_8.label = Screen-Shot-2020-07-06-at-10.39.06-AM
+album_65D39FBC_6EFC_193E_41C9_F8C0D55D1035_9.label = the-office-cast-photo-1
+album_65DDFF12_7469_6670_41C0_C7A841657EC0.label = Album de Fotos Prisonmike
+album_65DDFF12_7469_6670_41C0_C7A841657EC0_0.label = Prisonmike
+album_65F76FFB_7418_E5B0_41CD_C157FD1C70EF.label = Album de Fotos xxx-office-wilson-closeup-1812
+album_65F76FFB_7418_E5B0_41CD_C157FD1C70EF_0.label = xxx-office-wilson-closeup-1812
+album_66600B78_7418_AEB0_41C3_49BB2F64A208.label = Album de Fotos ct-1555011715-tu6nsm36w8-snap-image
+album_66600B78_7418_AEB0_41C3_49BB2F64A208_0.label = ct-1555011715-tu6nsm36w8-snap-image
+album_6690F92A_7478_EA50_41C4_F43103A8FF92.label = Album de Fotos 046224e9-7415-4cb5-b107-87ad8e79b71c-angela-sprinkles-the-office
+album_6690F92A_7478_EA50_41C4_F43103A8FF92_0.label = 046224e9-7415-4cb5-b107-87ad8e79b71c-angela-sprinkles-the-office
+map_66F17098_6DDA_9B9F_41D1_C1411510A14D.label = FloorPlan
+panorama_64D85882_6DD6_AA70_41C1_76AA1FB0F194.label = Reception
+panorama_64D89756_6DD9_A693_41D0_CE959F67FFF1.label = Conference Room @TV
+panorama_64D941C8_6DD9_FDF0_41C0_B9186187951F.label = Conference Room @Chairman
+panorama_64D955A9_6DD9_A5B0_41C7_C6E72A37E26B.label = Waiting room @Hall
+panorama_64D99E48_6DD9_66F0_41D2_3B574992AA9E.label = Kitchen @Center
+panorama_64D9AAD0_6DD6_AF90_41D8_CE0C829164ED.label = Kitchen @TV
+panorama_64D9E632_6DD6_E690_41AC_EF36789C9118.label = Desk
+panorama_64DAEB46_6DD9_AEF3_41A1_5F90A6F8BC08.label = Waiting room @TV
+panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700.label = Entrance
+panorama_67F2DED8_6DD6_A79F_4181_EBDC2CD05CD4.label = Presentation room
+video_7C7A66D4_6F2B_EB4E_4190_709702E46232.label = 1200px-Dunder_Mifflin,_Inc.svg
+video_7DE038F3_6F3C_274A_41DB_2C311C916BB4.label = the-office-original-opening-titles
+
+## Hotspot
+
+### Tooltip
+HotspotMapOverlayArea_7804E4A5_6EAA_BBB1_41D2_9A000716C147.toolTip = Desks
+HotspotMapOverlayArea_7822F3D3_6EDE_FD90_41BE_C5637CC1ED0C.toolTip = Kitchen
+HotspotMapOverlayArea_78565E9C_6ED9_A797_41CB_66BD7078F8A5.toolTip = Reception
+HotspotMapOverlayArea_7884DD2C_6EDB_6AB7_41D8_8C4BFE5F8D64.toolTip = Kitchen
+HotspotMapOverlayArea_7884F6FB_6EDA_E790_41DB_2D9AAFEF6170.toolTip = Waiting room
+HotspotMapOverlayArea_78D66F4F_6EAA_A6F1_4195_B534135CF6A2.toolTip = Presentation Room
+HotspotMapOverlayArea_78E70920_6EE9_6AAF_41C3_EA82365DE779.toolTip = Conference room
+HotspotMapOverlayArea_7944CEDE_6EEE_E793_41C2_F7675115667B.toolTip = Waiting room
+HotspotMapOverlayArea_794C2621_6ED7_E6B0_41A6_45CB34D28096.toolTip = Entrance
+HotspotMapOverlayArea_79B423E2_6EE9_9DB0_41D3_E45BB3D6EB30.toolTip = Conference room
+
+## E-Learning
+
+### Respuesta
+questionOption_640D3C0E_7427_EA50_41D2_12F70402986E.text = Michael Scott
+questionOption_644E93BA_7427_FDB0_41DA_0B130BC5153C.text = Michael Mifflin
+questionOption_6455104D_7427_FAD0_41C3_680249C451A1.text = Michael Scarn
+questionOption_64C451D4_741B_5DF0_41C3_99D02C41B6F4.text = Día de pretzel
+questionOption_64C461D4_741B_5DF0_41D5_93E66FB57260.text = Día de churros
+questionOption_64C471D4_741B_5DF0_4167_009C1AF97DA9.text = Día libre
+questionOption_6507469B_7479_A670_41C4_A5247A8C9E72.text = Sprinkles
+questionOption_6507569B_7479_A670_41D4_EDFF9853A24F.text = Garbage
+questionOption_6507B69B_7479_A670_41D9_424B664425E8.text = Snickers
+questionOption_653D13B3_732F_0FD8_4187_E2015BC45AFC.text = Asesino a alguien
+questionOption_653D23B3_732F_0FD8_41D9_541688818959.text = Secuestro al hijo del presidente
+questionOption_653D33B2_732F_0FD8_41B9_33BCE80B4AE3.text = Destruyo un auto ajeno
+questionOption_65B52B73_741B_6EB0_41CA_16A599CFCE42.text = Asistente de gerente regional
+questionOption_65B53B73_741B_6EB0_41CE_4CF0A9450BDE.text = Gerente regional
+questionOption_65B54B74_741B_6EB0_41D1_CEF0C4DD2107.text = Vendedor
+
+### Nombre Puntuación
+score1.label = Puntuación
+
+### Pregunta
+question_64CB01D4_741B_5DF0_41CE_A3CFA4E54DB4.title = ¿Cuál es el día favorito de Stanley?
+question_6508169B_7479_A670_419E_8B9FE0BEF6B6.title = ¿Cómo se llama el gato de Angela que es asesinado por Dwight?
+question_651E2D21_7428_AA50_41A8_DEA147E29A3C.title = ¿Cuál es el nombre del personaje de Michael que actua en su propia pelicula?
+question_6536A3B1_732F_0FD8_41D7_C69A149913FC.title = De acuerdo con 'Prison Mike', el fue a dar a la cárcel porque robó y...
+question_65B4BB73_741B_6EB0_41D0_12896DC8E1BF.title = ¿Cuál es el puesto de Dwight?
+
+### Pantalla Pregunta
+quizQuestion_67DEC3DE_73DD_0F4B_41D3_F356444DF014.ok = OK
+
+### Pantalla Reporte
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.completion = Completed
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.downloadCSV = Download .csv
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.elapsedTime = Time
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.items = Items Found
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.questions = Questions
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.questionsCorrect = Correct
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.questionsIncorrect = Incorrect
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.repeat = Repeat
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.submitToLMS = Submit
+quizScore_67D0A3DF_73DD_0F49_41D9_A4052003BAD9.title = - SCORE -
+
+### Pantalla Fin de Tiempo
+quizTimeout_67DDF3DE_73DD_0F4B_41CD_AB48A3ED3BDC.repeat = Repeat
+quizTimeout_67DDF3DE_73DD_0F4B_41CD_AB48A3ED3BDC.score = View Score
+quizTimeout_67DDF3DE_73DD_0F4B_41CD_AB48A3ED3BDC.title = - TIMEOUT -
