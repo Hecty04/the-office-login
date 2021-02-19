@@ -49,7 +49,6 @@
     </script>
     <script type="text/javascript">
         var tour;
-
         
 
         function loadTour()
@@ -243,19 +242,16 @@
             var params = getParams(location.search.substr(1));
             if(params.hasOwnProperty("skip-loading"))
             {
-                
-                disposePreloader();
-                return;
+                loadTour();
+               
             }
 
             if (isOVRWeb()){
-                showPreloader();
                 
                 return;
             }
 
-            showPreloader();
-			
+            
         }
 
         function playVideo(video) {
@@ -437,7 +433,7 @@
         <input type="password" placeholder="password" id="password"/>
     
         <button onclick="signUp()" id="signUp"> Sign Up </button>
-        <button onclick="signIn(),loadTour();" id="signIn"> Sign In </button>
+        <button onclick="signIn()" id="signIn"> Sign In </button>
         <button onclick="signOut()" id="signOut"> Sign Out </button>
     
         </div>
