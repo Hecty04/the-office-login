@@ -50,6 +50,8 @@
     <script type="text/javascript">
         var tour;
 
+        
+
         function loadTour()
         {
             if(tour) return;
@@ -68,6 +70,8 @@
             tour.bind(TDV.Tour.EVENT_TOUR_ENDED, onVirtualTourEnded);
             tour.load();
         }
+
+        
 
         function pauseTour()
         {
@@ -239,19 +243,19 @@
             var params = getParams(location.search.substr(1));
             if(params.hasOwnProperty("skip-loading"))
             {
-                loadTour();
+                
                 disposePreloader();
                 return;
             }
 
             if (isOVRWeb()){
                 showPreloader();
-                loadTour();
+                
                 return;
             }
 
             showPreloader();
-			loadTour();
+			
         }
 
         function playVideo(video) {
@@ -433,7 +437,7 @@
         <input type="password" placeholder="password" id="password"/>
     
         <button onclick="signUp()" id="signUp"> Sign Up </button>
-        <button onclick="signIn()" id="signIn"> Sign In </button>
+        <button onclick="signIn(),loadTour();" id="signIn"> Sign In </button>
         <button onclick="signOut()" id="signOut"> Sign Out </button>
     
         </div>
