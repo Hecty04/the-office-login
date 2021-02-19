@@ -242,19 +242,19 @@
             var params = getParams(location.search.substr(1));
             if(params.hasOwnProperty("skip-loading"))
             {
-                
+                loadTour();
                 disposePreloader();
                 return;
             }
 
             if (isOVRWeb()){
                 showPreloader();
-                
+                loadTour();
                 return;
             }
 
             showPreloader();
-			
+			loadTour();
         }
 
         function playVideo(video) {
