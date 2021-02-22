@@ -24,7 +24,7 @@
         promise.catch(e => alert(e.message));
 
         alert("Signed Up");
-        document.getElementById("formContainer").style.display = "block";
+        //document.getElementById("formContainer").style.display = "none";
     }
 
 
@@ -38,7 +38,7 @@
 
         alert("Signed In " + email.value);
 
-        document.getElementById("formContainer").style.display = "block";
+        //document.getElementById("formContainer").style.display = "none";
 
         //Take user to a different or home page
 
