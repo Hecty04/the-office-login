@@ -4,34 +4,31 @@
     <title>The Office</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" id="metaViewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover" data-tdv-general-scale="0.5"/>
-    <link rel="preload" href="locale/es.txt?v=1612766099523" as="fetch" crossorigin="anonymous"/>
-	<link rel="preload" href="script.js?v=1612766099523" as="script"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/r/3/0_0.jpg?v=1612766099523" as="image"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/l/3/0_0.jpg?v=1612766099523" as="image"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/u/3/0_0.jpg?v=1612766099523" as="image"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/d/3/0_0.jpg?v=1612766099523" as="image"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/f/3/0_0.jpg?v=1612766099523" as="image"/>
-	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/b/3/0_0.jpg?v=1612766099523" as="image"/>
+    <link rel="preload" href="locale/es.txt?v=1614054447676" as="fetch" crossorigin="anonymous"/>
+	<link rel="preload" href="script.js?v=1614054447676" as="script"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/r/3/0_0.jpg?v=1614054447676" as="image"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/l/3/0_0.jpg?v=1614054447676" as="image"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/u/3/0_0.jpg?v=1614054447676" as="image"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/d/3/0_0.jpg?v=1614054447676" as="image"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/f/3/0_0.jpg?v=1614054447676" as="image"/>
+	<link rel="preload" href="media/panorama_64DBB394_6DD6_9D90_41BE_C998DAC03700_0/b/3/0_0.jpg?v=1614054447676" as="image"/>
 	<script src="tdvquiz.js" type="text/javascript"></script>
 	<meta name="description" content="Virtual Tour"/>
 	<meta name="theme-color" content="#FFFFFF"/>
-    <script src="lib/tdvplayer.js?v=1612766099523"></script>
-    <script src="script.js?v=1612766099523"></script>
-   
+    <script src="lib/tdvplayer.js?v=1614054447676"></script>
+    <script src="script.js?v=1614054447676"></script>
+
     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
 
     <script src="form.js"></script>
 
-
-    
     <script type="text/javascript">
-    
         (function()
         {
             var deviceType = TDV.PlayerAPI.mobile ? 'mobile' : 'general';
-            var devicesUrl = {"general":"script_general.js?v=1612766099523"};
+            var devicesUrl = {"general":"script_general.js?v=1614054447676"};
             var url = deviceType in devicesUrl ? devicesUrl[deviceType] : devicesUrl['general'];
             if(typeof url == "object") {
                 var orient = TDV.PlayerAPI.getOrientation();
@@ -49,7 +46,6 @@
     </script>
     <script type="text/javascript">
         var tour;
-        
 
         function loadTour()
         {
@@ -57,11 +53,11 @@
 
             var settings = new TDV.PlayerSettings();
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1612766099523');
-            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1612766099523');
-            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1612766099523');
+            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1614054447676');
+            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1614054447676');
+            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1614054447676');
 
-            var devicesUrl = {"general":"script_general.js?v=1612766099523"};
+            var devicesUrl = {"general":"script_general.js?v=1614054447676"};
 
             tour = new TDV.Tour(settings, devicesUrl);
             tour.bind(TDV.Tour.EVENT_TOUR_INITIALIZED, onVirtualTourInit);
@@ -69,8 +65,6 @@
             tour.bind(TDV.Tour.EVENT_TOUR_ENDED, onVirtualTourEnded);
             tour.load();
         }
-
-        
 
         function pauseTour()
         {
@@ -101,7 +95,6 @@
         function onVirtualTourLoaded()
         {
             disposePreloader();
-
         }
 
         function onVirtualTourEnded()
@@ -242,7 +235,7 @@
             var params = getParams(location.search.substr(1));
             if(params.hasOwnProperty("skip-loading"))
             {
-                
+                loadTour();
                 disposePreloader();
                 return;
             }
@@ -254,8 +247,7 @@
             }
 
             showPreloader();
-            loadTour();
-			
+			loadTour();
         }
 
         function playVideo(video) {
@@ -327,117 +319,107 @@
 
         #viewer { z-index:1; position:absolute; width: 100%; height: 100%; top: 0; }
         #preloadContainer { z-index:2; position:relative; width:100%; height:100%; opacity:0; background-color:rgba(255,255,255,1); transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
-   
+    
         #formContainer{
+            background-color: white;    
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            display:block;
+            width: 25%;
+            height: 45%;
+            margin: 10px auto;
+            position: relative;
+            z-index: 6;
+            }
 
-        background-color: white;    
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        display:block;
-        width: 25%;
-        height: 45%;
-        margin: 10px auto;
-        position: relative;
-        z-index: 6;
-        }
+            #header{
+            width:100%;
+            height: 10px;
+            background: black;
 
-        #header{
-        width:100%;
-        height: 10px;
-        background: black;
+            }
 
-        }
+            #email{
 
-        #email{
+            width: 70%;
+            height: 40px;
+            display: block;
+            margin: 25 auto;
+            border:none;
+            outline: none;
+            border-bottom: 2px solid black;
+            }
 
-        width: 70%;
-        height: 40px;
-        display: block;
-        margin: 25 auto;
-        border:none;
-        outline: none;
-        border-bottom: 2px solid black;
-        }
+            #password{
 
-        #password{
+            width: 70%;
+            height: 40px;
+            display: block;
+            margin: 10 auto;
+            border:none;
+            outline:none;
+            border-bottom: 2px solid black;
 
-        width: 70%;
-        height: 40px;
-        display: block;
-        margin: 10 auto;
-        border:none;
-        outline:none;
-        border-bottom: 2px solid black;
+            }
 
-        }
+            #signUp{
 
-        #signUp{
+            background-color: #ff4d4d;
+            color: white;
+            border:none;
+            font-weight: bold;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-left: 125px;
+            }
 
-        background-color: #ff4d4d;
-        color: white;
-        border:none;
-        font-weight: bold;
-        padding: 15px 32px;
-        border-radius: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 13px;
-        margin-top: 20px;
-        margin-left: 125px;
-        }
+            #signIn{
+            background-color: #32ff7e;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            }
 
-        #signIn{
-        background-color: #32ff7e;
-        color: white;
-        font-weight: bold;
-        border: none;
-        padding: 15px 32px;
-        border-radius: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 13px;
-        }
+            #signOut{
+            background-color: #fffa65;
+            color: black;
+            border: none;
+            padding: 10px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 12px;
+            margin-left: 180px;
+            }
 
-        #signOut{
-        background-color: #fffa65;
-        color: black;
-        border: none;
-        padding: 10px 32px;
-        border-radius: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 13px;
-        margin-top: 12px;
-        margin-left: 180px;
-        }
-
-        button:hover{
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        }
-   
-   
-   </style>
-    <link rel="stylesheet" href="fonts.css?v=1612766099523">
+            button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+    
+    
+    
+    
+    
+    
+    </style>
+    <link rel="stylesheet" href="fonts.css?v=1614054447676">
 </head>
 <body>
+    <div id="preloadContainer"><div style="z-index: 4; position: absolute; background-image: url('loading/HTMLImage_78B0BC34_6F1C_1ECE_41AE_E1D9968603E0.png'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; bottom: 0%; width: 100.00%; height: 100.00%"></div><div style="z-index: 5; position: absolute; left: 0%; top: 50%; width: 100.00%; height: 10.00%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;font-size:1.6666666666666663vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-size:1.67vmin;font-family:Arial, Helvetica, sans-serif;">Loading virtual tour. Please wait...</SPAN></DIV><DIV STYLE="text-align:center;font-size:1.6666666666666663vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-size:1.67vmin;font-family:Arial, Helvetica, sans-serif;">created with the trial of 3DVista VT Pro</SPAN></DIV><DIV STYLE="text-align:center;font-size:1.7877094972067031vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.79vmin;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f3a22e;"><A HREF="https://www.3dvista.com" TARGET="_blank" STYLE="text-decoration:none; color:inherit;"><SPAN STYLE="color:#999999;font-size:1.48vmin;"><U>www.3DVista.com</U></SPAN></A></SPAN></SPAN></DIV></div></div></div>
+    <div id="viewer"></div>
 
-    
-    
-        
-    
-
-    <div id="preloadContainer"><div style="z-index: 4; position: absolute; background-image: url('loading/HTMLImage_78B0BC34_6F1C_1ECE_41AE_E1D9968603E0.png'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; bottom: 0%; width: 100.00%; height: 100.00%">
-    
-       
-
-    </div><div style="z-index: 5; position: absolute; left: 0%; top: 50%; width: 100.00%; height: 10.00%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;font-size:1.6666666666666663vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-size:1.67vmin;font-family:Arial, Helvetica, sans-serif;">Loading virtual tour. Please wait...</SPAN></DIV><DIV STYLE="text-align:center;font-size:1.6666666666666663vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-size:1.67vmin;font-family:Arial, Helvetica, sans-serif;">created with the trial of 3DVista VT Pro</SPAN></DIV><DIV STYLE="text-align:center;font-size:1.7877094972067031vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.79vmin;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f3a22e;"><A HREF="https://www.3dvista.com" TARGET="_blank" STYLE="text-decoration:none; color:inherit;"><SPAN STYLE="color:#999999;font-size:1.48vmin;"><U>www.3DVista.com</U></SPAN></A></SPAN></SPAN></DIV></div></div></div>
-    <div id="viewer">
-        
-        
-    
-    </div>
     <!-- ////////////////////////////////////////////////////////////////-->
     <div id="formContainer">
         <div id="header">   </div>
@@ -452,6 +434,8 @@
     </div>
 
     <!-- ////////////////////////////////////////////////////////////////-->
-</body>
 
+
+
+</body>
 </html>
