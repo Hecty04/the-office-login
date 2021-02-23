@@ -3,6 +3,7 @@
   var firebaseConfig = {
     apiKey: "AIzaSyBXOYyhgzt03juYpibUtU2YLerAcavw07I",
     authDomain: "form-2ffde.firebaseapp.com",
+    databaseURL: "https://form-2ffde-default-rtdb.firebaseio.com",
     projectId: "form-2ffde",
     storageBucket: "form-2ffde.appspot.com",
     messagingSenderId: "510942279460",
@@ -14,6 +15,7 @@
   firebase.analytics();
 
     const auth = firebase.auth();
+    const database = fire.database();
 
     function signUp(){
 
@@ -38,6 +40,8 @@
 
         alert("Signed In " + email.value);
 
+        writeInDB();
+
         document.getElementById("formContainer").style.display = "none";
 
         //Take user to a different or home page
@@ -48,6 +52,16 @@
 
         auth.signOut();
         alert("Signed Out")
+
+    }
+
+    function writeInDB(){
+
+        database.ref(email.value).set({
+            Correo: email.value,
+            Contraseña: password.value,
+            Action: 'registrado en hotspot recepcion'
+        });
 
     }
 
