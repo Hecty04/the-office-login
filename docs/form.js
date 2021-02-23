@@ -57,9 +57,9 @@
 
     function writeInDB(){
 
-        database.ref(email.value).set({
-            Correo: email.value,
-            Contraseña: password.value,
+        database.ref('user/'+email).set({
+            Correo: email,
+            Contraseña: password,
             Action: 'registrado en hotspot recepcion'
         });
 
