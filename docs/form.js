@@ -25,6 +25,8 @@
         const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
         promise.catch(e => alert(e.message));
 
+        writeInDB();
+
         alert("Signed Up");
         document.getElementById("formContainer").style.display = "none";
     }
@@ -40,7 +42,7 @@
 
         alert("Signed In " + email.value);
 
-        writeInDB();
+        
 
         document.getElementById("formContainer").style.display = "none";
 
@@ -57,9 +59,9 @@
 
     function writeInDB(){
 
-        database.ref('user/'+email).set({
-            Correo: email,
-            Contraseña: password,
+        database.ref('user/'+email.value).set({
+            Correo: email.value,
+            Contraseña: password.value,
             Action: 'registrado en hotspot recepcion'
         });
 
