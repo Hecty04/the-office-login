@@ -61,9 +61,9 @@
 
     function writeInDB(){
 
-        database.ref('user/'+'correo').set({
-            Correo: 'correo@hotmail.com',
-            Contraseña: 'contraseña',
+        database.ref('user/'+'Hector Villarreal').set({
+            Correo: email.value,
+            Contraseña: password.value,
             Action: 'registrado en hotspot recepcion'
         });
 
