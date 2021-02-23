@@ -15,7 +15,7 @@
   firebase.analytics();
 
     const auth = firebase.auth();
-    const database = fire.database();
+    const database = firebase.database();
 
     function signUp(){
 
@@ -27,7 +27,7 @@
 
         writeInDB();
 
-        alert("Signed Up");
+        alert("Signed Up" + email.value);
         document.getElementById("formContainer").style.display = "none";
     }
 
